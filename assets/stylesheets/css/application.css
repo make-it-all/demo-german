@@ -3162,6 +3162,19 @@ i.error {
 span.highlight {
   background: yellow; }
 
+#language_bar {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 20px; }
+
 .tabs_container input[type='radio'].tab_controller {
   display: none; }
   .tabs_container input[type='radio'].tab_controller:nth-child(1):checked ~ .tab_heads_container label:nth-child(1) {
