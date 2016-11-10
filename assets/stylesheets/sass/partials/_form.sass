@@ -1,0 +1,55 @@
+.field
+  margin-bottom: 20px
+  label
+    display: block
+    font-weight: bold
+    font-size: 0.8rem
+    color: rgba(black, 0.6)
+    margin-bottom: 3px
+    text-transform: uppercase
+  input
+    width: 100%
+    font-size: 1rem
+    padding: 10px 15px
+    border: 1px solid #ccc
+    border-radius: 3px
+.actions
+  text-align: right
+  input[type=submit]
+    background: $accent_color
+    -webkit-appearance: none
+    display: inline-block
+    height: 40px
+    padding: 0 15px
+    line-height: 40px
+    color: white
+    border-radius: 3px
+    border: 0
+form
+  &.with_panels
+    +flexbox
+    border-top: 1px solid $divider_color
+    padding-top: 25px
+
+select
+  width: 100%
+  &[multiple]
+    height: 100px
+
+
+
+#main_form_panel
+  width: 350px
+  padding: 20px 30px
+  +flex-shrink(0)
+#side_form_panel
+  border-left: 1px solid $divider_color
+  padding: 0 25px
+  +flex-grow(1)
+
+.field_with_errors
+  border: 1px solid red !important
+
+.form_errors
+  p
+    color: $red

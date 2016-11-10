@@ -1,0 +1,30 @@
+.tabs_container
+  input[type='radio'].tab_controller
+    display: none
+    @for $i from 1 through 10
+      &:nth-child(#{$i}):checked ~
+        .tab_heads_container
+          label:nth-child(#{$i})
+            border-bottom: 2px solid $primary_color
+            color: black
+        .tab_panels_container
+          > .tab_panel:nth-child(#{$i})
+            display: block
+  .tab_panel
+    display: none
+.tab_heads_container
+  border-bottom: 1px solid $divider_color
+  padding: 0 10px
+  label
+    display: inline-block
+    padding: 28px 0 16px
+    margin: 0 10px
+    cursor: pointer
+    font-weight: 400
+    text-transform: none
+    color: #999
+    font-size: 14px
+    transition: color 0.3s
+.tab_panel
+  background: white
+  padding: 24px

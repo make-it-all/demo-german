@@ -1,0 +1,156 @@
+*
+  box-sizing: border-box
+body
+  font-family: $font, Sans-Serif
+  font-size: 87.5%
+  -webkit-font-smoothing: antialiased
+a
+  color: $text_color
+  text-decoration: none
+  &:hover
+    text-decoration: underline
+img
+  max-width: 100%
+h1, h2, h3, h4, h5, h6, p, li
+  color: $text_color
+p
+  line-height: 1.5rem
+.hidden
+  display: none
+[data-url]
+  cursor: pointer
+// Add any general site styling here
+
+
+#page_wrapper
+  min-height: calc( 100vh - 50px )
+  +flexbox
+
+#login_page_wrapper
+  width: 450px
+  position: relative
+  padding: 40px
+  top: 200px
+  margin: 0 auto
+  background: white
+  border-radius: 5px
+  box-shadow: $box-1
+
+#login_page
+  height: 100vh
+  background: $light_primary_color
+
+#page
+  +flex-grow(1)
+
+#page_head
+  +flexbox
+
+#page_info
+  padding: 10px 30px
+  +flex-grow(1)
+  h1
+    display: inline-block
+    vertical-align: middle
+    font-weight: normal
+    font-size: 1.5rem
+
+  #page_actions
+    display: inline-block
+    vertical-align: middle
+    margin-left: 30px
+    a
+      padding: 10px
+      background: $accent_color
+      color: white
+      border-radius: 3px
+      font-weight: bold
+      text-transform: uppercase
+      font-size: 0.8rem
+      + a
+        margin-left: 5px
+      &.red
+        background: $red
+
+  p
+    margin: 0
+    color: rgba(black, 0.5)
+    font-style: italic
+
+
+#page_filters
+  padding: 20px 30px
+  #search_form
+    form
+      input[type=search]
+        width: 250px
+        font-size: 1rem
+        padding: 0 15px
+        line-height: 40px
+        border: 1px solid #ccc
+        border-radius: 3px
+      input[type=submit]
+        background: $primary_color
+        -webkit-appearance: none
+        display: inline-block
+        height: 40px
+        padding: 0 15px
+        line-height: 40px
+        color: white
+        border-radius: 3px
+        border: 0
+
+
+table.index_table
+  border-collapse: collapse
+  width: 100%
+  font-size: 0.8rem
+  thead
+    background: #f9f9f9
+    text-transform: uppercase
+  th
+    padding: 15px 20px
+    border: 1px solid rgba(black, 0.1)
+    font-weight: normal
+    text-align: left
+    color: #999
+    font-size: 0.8rem
+    &.narrow_column
+      width: 1px
+    &.main_column
+      width: 40%
+    &.orderable
+      padding-right: 30px
+      position: relative
+      a:after
+        font-family: FontAwesome
+        display: block
+        position: absolute
+        right: 10px
+        top: 16px
+      &.orderable-asc a:after
+        content: '\f078'
+      &.orderable-desc a:after
+        content: '\f077'
+
+  td
+    padding: 15px 20px
+
+  tr
+    border-top: 1px solid #e4e4e4
+
+    &:hover
+      background: #efefef
+
+i
+  &.good
+    color: $good
+  &.bad
+    color: $bad
+  &.warning
+    color: #ffc107
+  &.error
+    color: #f44336
+
+span.highlight
+  background: yellow

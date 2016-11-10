@@ -1,0 +1,28 @@
+$font: 'Source Sans Pro'
+// COLORS
+$primary_color:        #d3d3d3
+$dark_primary_color:   darken($primary_color, 10%)
+$light_primary_color:  lighten($primary_color, 10%)
+$text_color:   rgba(black, 0.8)
+$light_text_color:   rgba(white, 0.8)
+$accent_color:         #f2b800
+$divider_color:  #d1d5d7
+
+$red: #ff5722
+
+$bad: $red
+$good: #4caf50
+
+$box-1: 0 2px 1px 0 rgba(0,0,0,0.3)
+
+//DIMENSIONS
+$sidebar_width:  230px
+
+
+@mixin user-select($value: none)
+  -webkit-touch-callout: $value
+  -webkit-user-select: $value
+  -khtml-user-select: $value
+  -moz-user-select: $value
+  -ms-user-select: $value
+  user-select: $value
