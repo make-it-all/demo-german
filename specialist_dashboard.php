@@ -11,7 +11,7 @@
   <body>
   <?php require 'partials/_header.php'; ?>
    <div id="page_wrapper">
-    <?php require 'partials/_help_sidebar.php'; ?>
+    <?php require 'partials/_sidebar.php'; ?>
 
     <div id="page">
       <?php if (isset($_GET['flash'])): ?>

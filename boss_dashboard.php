@@ -11,7 +11,7 @@
   <body>
   <?php require 'partials/_header.php'; ?>
    <div id="page_wrapper">
-    <?php require 'partials/_help_sidebar.php'; ?>
+    <?php require 'partials/_sidebar.php'; ?>
 
     <div id="page">
       <?php if (isset($_GET['flash'])): ?>
@@ -39,7 +39,7 @@
         <div id="page_content">
 
 
-          
+
 
           <div class="panel" id="new_calls_graph">
 
