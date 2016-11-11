@@ -11,10 +11,9 @@
     <label for="language_dropdown_controller" class="dropdown_label">English</label>
     <input type="checkbox" id="language_dropdown_controller" class="dropdown_controller" />
     <div class="dropdown_contents">
-      <a href="#">Arabic</a>
-      <a href="https://make-it-all-german.herokuapp.com">German</a>
-      <a href="#">Mandarin</a>
-      <a href="#">Cantonese</a>
+      <a href="https://make-it-all-demo.herokuapp.com">English</a>
+      <a href="https://make-it-all-demo-arabic.herokuapp.com">Arabic</a>
+      <a href="https://make-it-all-demo-chinese.herokuapp.com">Chinese</a>
     </div>
   </div>
 </div>
