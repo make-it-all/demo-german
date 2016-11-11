@@ -4,7 +4,7 @@
   </div>
   <div class="flex-spacer"></div>
   <div id="user_section">
-    Signed in as Michael Boss -
-    <a href="session/logout.php">Log out</a>
+    Eingeloggt als Michael Boss -
+    <a href="session/logout.php">abmelden</a>
   </div>
 </div>
